@@ -1,8 +1,18 @@
-// var question = 
+$(document).ready(function(){
+
+ $("body").on("click","button", function(event){
+  event.preventDefault();
+  generateHTML();
+
+});
 
 var timeLeft =31;
 var intervalId;
-$("button").on("click",function(){
+var rightAnswer = 0;
+var wrongAnswer = 0;
+var unanswered =0;
+var clickButton = false;
+
 
 function run() {
       intervalId = setInterval(decrement, 1000);
@@ -20,15 +30,29 @@ function run() {
     }
 
   run();
-  var questions = [
-  'In the 2016 American fantasy adventure film, "The Jungle Book", what is the name of the orphaned human boy?',
-]
-  var questionDiv = $(".selectGroup").append("<p id ='questions'>");
-  $("#questions").html(questions[0]);
+  
+
+
  function stop(){
  	clearInterval(intervalId);
  }
 
+
+
+for (i = 0; i < questons.length; i++){
+  if (clickanswer){
+    unanswered++;
+  }
+  else if (!clickanswer){
+    if(userAnswer === answers){
+      rightAnswer++;
+    }
+
+    else{
+      wrongAnswer++;
+    }
+  }
+}
 
 
 var result = setTimeout(function(){
@@ -36,9 +60,9 @@ var result = setTimeout(function(){
 $("#result").html("<h2> All Done!"); 
 	
 }, 32 * 1000);	
+
+
 });
-
-
 
 
 // if(userAnswer === anwer){
