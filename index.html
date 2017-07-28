@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+	<title>Trivia Game</title>
+	<meta charset="utf-8">
+	<link rel="stylesheet" type="text/css" href="assets/css/style.css">
+	<script
+  src="http://code.jquery.com/jquery-2.2.4.js"
+  integrity="sha256-iT6Q9iMJYuQiMWNd9lDyBUStIq/8PuOW33aOqmvFpqI="
+  crossorigin="anonymous"></script>
+</head>
+<body>
+<div id = "container"></div>
+	<header>
+		<h1>Trivia Trivia</h1>
+	</header>
+	<button>Start</button>
+	<div id = "timer"></div>
+	
+	<form id="foo">
+		<div class='selectGroup'>
+		    <input id="q1a" value="a" name="question[q1correct]" type="radio">1</input>
+		    <input id="q1b" value="b" name="question[q1correct]" type="radio">2</input>
+		    <input id="q1c" value="c" name="question[q1correct]" type="radio">3</input>
+		    <input id="q1d" value="d" name="question[q1correct]" type="radio">4</input>
+
+		</div>
+
+		<div class='selectGroup'>
+		    <input id="q2a" value="a" name="question[q2correct]" type="radio">1</input>
+		    <input id="q2b" value="b" name="question[q2correct]" type="radio">2</input>
+		    <input id="q2c" value="c" name="question[q2correct]" type="radio">3</input>
+		    <input id="q2d" value="d" name="question[q2correct]" type="radio">4</input>
+
+		</div>
+		<div class='selectGroup'>
+		    <input id="q3a" value="a" name="question[q3correct]" type="radio">1</input>
+		    <input id="q3b" value="b" name="question[q3correct]" type="radio">3</input>
+		    <input id="q3c" value="c" name="question[q3correct]" type="radio">3</input>
+		    <input id="q3d" value="d" name="question[q3correct]" type="radio">4</input>
+
+		</div>
+
+</form>
+	<div id = "result"></div>
+<script type="text/javascript" src ="assets/javascript/app.js"></script>
+
+</body>
+
+</html>
